@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('C:/Users/kowsh/OneDrive/Desktop/WT/database/to-do/t.jpg');
+    ; /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #050303;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.add-task-container {
+    display: flex;
+    align-items: center;
+}
+
+#todoInput {
+    flex: 1;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#addButton {
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+#addButton:hover {
+    background-color: #0056b3;
+}
+
+.task-list,
+.completed-tasks {
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.task-list h2,
+.completed-tasks h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li:hover {
+    background-color: #f0f0f0;
+}
